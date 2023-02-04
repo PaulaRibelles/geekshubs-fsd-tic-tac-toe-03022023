@@ -37,10 +37,34 @@ body{
     justify-content: space-around;
 }
 
-.table_Tic_Tac{
-    width: 100%;
-    height: 70%;
+.table{
+    width: 70%;
+    height: 80%;
     border: 6px solid whitesmoke;
     border-radius: 5px;
     padding: 10px 10px;
 }
+
+.table_Tic_Tac{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.table_Tic_Tac td{
+    text-align: center;
+    width: 33.3%;   
+}
+
+.table_Tic_Tac tr{
+    height: 33.3%;
+}
+
+#c1_1 , #c1_2 , #c2_1 , #c2_2 , #c3_1 , #c3_2{
+    border-right: 5px solid white;
+}
+
+#c1_1 , #c1_2 , #c1_3 , #c2_1 , #c2_2 , #c2_3{
+    border-bottom: 5px solid white ;
+}
+
