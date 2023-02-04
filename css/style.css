@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(39, 37, 37);
+    min-width: 320px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    margin-right: auto;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.title_h1{
+    margin: auto;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 60%;
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* background-color: aqua; */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table_Tic_Tac{
+    width: 100%;
+    height: 70%;
+    border: 6px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px 10px;
+}

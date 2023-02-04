@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -14,31 +15,27 @@
             <img src="" alt="logo">
         </div>
         <!-- Título -->
-        <h1 class="title_Tic_Tac"> Tic Tac Toe</h1>
+        <h1 class="title_h1"> Tic Tac Toe</h1>
 
     </div>
     <!-- Main -->
     <div class="main">
-
         <!-- Player 1 -->
         <div class="player1">
-
             <!-- Name Player 1 -->
             <div class="name1">
                 <p>Jugador 1</p>
             </div>
-
-            <div class="point1">
+            <!-- Score -->
+            <div class="score1">
                 <p>Puntuación</p>
                 <p>0</p>
             </div>
-
         </div>
 
         <!-- Table -->
         <div class="table">
             <table class="table_Tic_Tac">
-
                 <!-- TOP -->
                 <tr>
                     <td id="c1_1">
@@ -75,32 +72,42 @@
                         <button class="button_cel" onclick="active()" type="button"></button>
                     </td>
                 </tr>
-
             </table>
         </div>
-
         <!--Player 2  -->
         <div class="player2">
-
             <!-- Name player 2 -->
             <div class="name2">
                 <p>Jugador 2</p>
             </div>
-
-            <!-- Point player 2 -->
-            <div class="point2">
+            <!-- Score player 2 -->
+            <div class="score2">
                 <p>Puntuación</p>
                 <p>0</p>
-
             </div>
-
         </div>
-
     </div>
+
+    <!-- Mobile Style -->
+    <!-- <div class="players_mobile">
+        <div class="player1_mobile">
+            <p>Jugador 1</p>
+            <p>0</p>
+        </div>
+        <div class="player2_mobile">
+            <p>Jugador 2</p>
+            <p>0</p>
+        </div>
+    </div> -->
 
     <!-- Footer -->
     <div class="footer">
-
+        <button type="button" class="Start">
+            Empezar
+        </button>
+        <button type="button" class="New_game">
+            Nuevo Juego
+        </button>
     </div>
 </body>
 </html>
