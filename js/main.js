@@ -1,16 +1,24 @@
 
 // BOARD
 
-let tablero = Array.from(document.getElementsByClassName("cellDesign"));
+// Convertimos en Array
 
-let turno = true;
+let board = Array.from(document.getElementsByClassName("cellDesign"));
 
-let fichaP1 = 3;
-let fichaP2 = 3;
+let turn = true;
 
-let miTablero = ["","","","","","","","",""];
+// Determinamos 3 turnos por jugador
 
-let combinacionGanadora = [
+let turnP1 = 3;
+let turnP2 = 3;
+
+// El tablero se compone de 9 celdas
+
+let myBoard = ["","","","","","","","",""];
+
+// Indicamos las opciones ganadoras
+
+let optionsWinner = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -21,24 +29,28 @@ let combinacionGanadora = [
     [2, 4, 6],
 ];
 
-const comprueboGanador = () => {
-    console.log(miTablero);
+// Comprobamos por cada movimiento si hay un ganador
+
+const checkWinner = () => {
+    console.log(myBoard);
 };
 
-tablero.map(
-    (celda) => {
-        celda.addEventListener('click', ()=> {
-            if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
-                celda.innerHTML = (turno) ? "X" : "O";
+// Pintamos X || O según el turno del jugador
 
-                (turno) ? fichaP1-- : fichaP2--;
+board.map(
+    (box) => {
+        box.addEventListener('click', ()=> {
+            if((box.innerHTML === "") && (turnP1 > 0 || turnP2 > 0)){
+                box.innerHTML = (turn) ? "X" : "O";
 
-                miTablero[celda.id] = (turno) ? "X" : "O";
+                (turn) ? turnP1-- : turnP2--;
 
-                comprueboGanador();
+                myBoard[box.id] = (turn) ? "X" : "O";
+
+                checkWinner();
 
                 //Cambiamos de turno
-                turno = !turno;
+                turn = !turn;
             };
         });
     }
