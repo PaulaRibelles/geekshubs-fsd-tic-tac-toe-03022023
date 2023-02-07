@@ -11,6 +11,8 @@ body{
     background-color: rgb(39, 37, 37);
     min-width: 320px;
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
@@ -27,7 +29,7 @@ body{
     padding-left: 20px;
 }
 
-.title_h1{
+.title_h{
     margin: auto;
     letter-spacing: 3px;
     text-align: center;
@@ -46,36 +48,78 @@ body{
     justify-content: space-around;
 }
 
-/* Table */
+/* Board */
 
-    /* Out border */
+.tableroContainer{
+    width: 40em;
+    height: 29em;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    border: 5px solid blue;
+    border-radius: 3px;
+    /* background-color: aliceblue; */
+}
 
-.table{
+.cellDesign{
+    width: 10em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    margin: 1em;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+/* .board{
+    width: 50%;
+    height: 80%;
+    border: 8px solid blue;
+    border-radius: 5px;
+    padding: 10px 10px;
+    align-items: center;
+} */
+
+/* .board_in{
+    width: 100%;
+    height: 33.3%;
+    justify-content: center;
+} */
+
+
+
+/* .table{
     width: 50%;
     height: 80%;
     border: 8px solid rgb(53, 34, 231);
     border-radius: 5px;
     padding: 10px 10px;
-}
+} */
 
     /* In table */
 
-.table_Tic_Tac{
+/* .table_Tic_Tac{
     width: 100%;
     height: 100%;
     border-collapse: collapse;
-}
+}  */
 
-.table_Tic_Tac td{
+/* .table_Tic_Tac td{
     text-align: center;
     width: 33.3%;   
-}
+} */
 
-.table_Tic_Tac tr{
+/* .table_Tic_Tac tr{
     height: 33.3%;
-}
+} */
 
-#c1_1 , #c1_2 , #c2_1 , #c2_2 , #c3_1 , #c3_2{
+.dotted_board{
     border-right: 5px solid white;
     border-style: dotted;
 }
@@ -91,9 +135,9 @@ body{
     width: 90%;
     margin: auto;
     /* background-color: aqua; */
-    background-color: transparent;
+    /* background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 /* Players */
@@ -124,13 +168,20 @@ body{
     margin-bottom: 50px;
 }
 
-
 .name1{
     border: 3px solid orange;
 }
 
 .name2{
     border: 3px solid rgb(218, 19, 19);
+}
+
+.icons_live{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px 90px;
 }
 
 
@@ -146,29 +197,4 @@ body{
     align-items: center;
 }
 
-/* .start{
-    height: 40px;
-    width: 20px;
-    border-radius: 3px;
-    border: 5px solid black;
-    margin-left: 20px;
-} */
 
-/* .players_mobile{
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.player1_mobile{
-    font-size: 18px;
-    width: 40%;
-    height: 100%;
-    border: 2px solid whitesmoke;
-    background: linear-gradient (blueviolet, black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-} */
