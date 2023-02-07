@@ -1,0 +1,17 @@
+
+@import url('https://fonts.cdnfonts.com/css/gamer');
+
+body{
+    background-color: black;
+    font-family: gamer;
+    font: white;
+}
+
+.container{
+    width: 50em;
+    height: 30em;
+    border: 5px solid green;
+    display: flex;
+    margin: auto;
+    margin-top: 10em;
+}
