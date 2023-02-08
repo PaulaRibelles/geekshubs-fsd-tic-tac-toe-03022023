@@ -52,7 +52,7 @@ body{
 
 .tableroContainer{
     width: 40em;
-    height: 26em;
+    height: 29em;
     display: grid;
     grid-template-columns: repeat(3,auto);
     border: 8px solid blue;

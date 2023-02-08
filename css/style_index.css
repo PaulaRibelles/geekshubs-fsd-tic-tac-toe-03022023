@@ -4,7 +4,9 @@
 body{
     background-color: black;
     font-family: helvetica;
+    /* font-family: gamer; */
     color: white;
+    font-size: 24px;
 }
 
 .title_h1{
@@ -13,14 +15,30 @@ body{
 }
 
 .container{
-    width: 50em;
-    height: 30em;
+    width: 35em;
+    height: 20em;
     border: 5px solid green;
     display: flex;
+    flex-direction: column;
     margin: auto;
     margin-top: 10em;
     font: white ;
     justify-content: center;
+    align-items: center;
+}
 
+.start{
+    width: 5em;
+    height: 2em;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.start:hover{
+    background-color: green;
+    color:whitesmoke
 }
 
