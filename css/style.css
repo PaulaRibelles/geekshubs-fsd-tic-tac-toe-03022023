@@ -52,7 +52,7 @@ body{
 
 .tableroContainer{
     width: 40em;
-    height: 29em;
+    height: 26em;
     display: grid;
     grid-template-columns: repeat(3,auto);
     border: 8px solid blue;
@@ -62,7 +62,7 @@ body{
 
 .cellDesign{
     width: 10em;
-    height: 8em;
+    height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,11 @@ body{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: blueviolet;
+    border: 3px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    /* background-color: blueviolet; */
 }
 
 .icons_players{
@@ -119,11 +123,12 @@ body{
 }
 
 .name1{
-    border: 3px solid orange;
+    border-color: orange;
+
 }
 
 .name2{
-    border: 3px solid rgb(218, 19, 19);
+    border-color: rgb(218, 19, 19);
 }
 
 .icons_live{

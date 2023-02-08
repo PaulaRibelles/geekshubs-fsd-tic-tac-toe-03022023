@@ -11,21 +11,22 @@
     }
 
     .player1{
-        width: 70%;
-        height: 100%;
+        width: 15em;
+        height: 5em;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        /* flex-direction: column; */
         font-size: 1em;
         text-align: center;
         border: none;
+        /* background-color: aquamarine; */
     }
 
     .name_title{
-        margin-right: 3em;
+        margin-right: 1em;
         width: 30em;
         height: 2em;
+        /* background-color: blue; */
     }
 
     .icons_p1{
