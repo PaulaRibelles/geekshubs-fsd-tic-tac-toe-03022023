@@ -55,7 +55,7 @@ body{
     height: 29em;
     display: grid;
     grid-template-columns: repeat(3,auto);
-    border: 5px solid blue;
+    border: 8px solid blue;
     border-radius: 3px;
     /* background-color: aliceblue; */
 }
@@ -73,67 +73,20 @@ body{
 }
 
 
-/* .board{
-    width: 50%;
-    height: 80%;
-    border: 8px solid blue;
-    border-radius: 5px;
-    padding: 10px 10px;
-    align-items: center;
-} */
-
-/* .board_in{
-    width: 100%;
-    height: 33.3%;
-    justify-content: center;
-} */
-
-
-
-/* .table{
-    width: 50%;
-    height: 80%;
-    border: 8px solid rgb(53, 34, 231);
-    border-radius: 5px;
-    padding: 10px 10px;
-} */
-
-    /* In table */
-
-/* .table_Tic_Tac{
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
-}  */
-
-/* .table_Tic_Tac td{
-    text-align: center;
-    width: 33.3%;   
-} */
-
-/* .table_Tic_Tac tr{
-    height: 33.3%;
-} */
-
 .dotted_board{
-    border-right: 5px solid white;
-    border-style: dotted;
+    border-right: 5px dotted white;
 }
 
-#c1_1 , #c1_2 , #c1_3 , #c2_1 , #c2_2 , #c2_3{
-    border-bottom: 5px solid white ;
-    border-style: dotted;
+.border_dotted{
+    border-bottom: 5px dotted white;
 }
+
 
 .button_cel{
     display: block;
     height: 90%;
     width: 90%;
     margin: auto;
-    /* background-color: aqua; */
-    /* background-color: transparent;
-    border: none;
-    cursor: pointer; */
 }
 
 /* Players */
@@ -156,6 +109,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    background-color: blueviolet;
 }
 
 .icons_players{
@@ -173,24 +127,27 @@ body{
 }
 
 .icons_live{
-    width: 50px;
+    width: 2em;
+    height: 3em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 50px 90px;
-}
+    justify-content: center;
+    align-items: 0, center;
+    margin: auto;
+    margin-top: 3em;
 
+}
 
 /* Buttons start and new game */
 
-.buttons{
+/* .buttons{
     width: 100%;
     height: 20px;
-    /* background-color: bisque; */
+    background-color: bisque;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
