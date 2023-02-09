@@ -1,11 +1,8 @@
 
-
-
 let playerInputs = {
     player1 : '',
     player2 : ''
 };
-
 
 let inputsCapturados = Array.from(document.getElementsByTagName("input"));
 inputsCapturados.map(
@@ -21,3 +18,5 @@ inputsCapturados.map(
         });
     }
 );
+
+
