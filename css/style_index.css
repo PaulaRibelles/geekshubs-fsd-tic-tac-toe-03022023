@@ -1,12 +1,10 @@
 
-/* @import url('https://fonts.cdnfonts.com/css/gamer'); */
 
-@import url('https://fonts.cdnfonts.com/css/retro-new-version');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
 
 body{
     background-color: black;
-    font-family: helvetica;
-    font-family: Retro New Version;
+    font-family: Public Pixel;
     color: white;
     font-size: 28px;
     justify-content: center;
@@ -24,7 +22,7 @@ body{
     height: 20em;
     border: 5px solid green;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
     margin-top: 5em;
     font: white ;

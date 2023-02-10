@@ -41,7 +41,6 @@ let optionsWinner = [
 
 const checkWinner = () => {
     if (myBoard[0] == myBoard[1] && myBoard[1] == myBoard[2]){
-        
     window.location.href = "../pages/winner.html"
     }else if (myBoard[3] == myBoard[4] && myBoard[4] == myBoard[5]){
         window.location.href = "../pages/winner.html"

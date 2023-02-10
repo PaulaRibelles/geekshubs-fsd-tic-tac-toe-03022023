@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
     <link rel="shortcut icon" href="../img/icon2.png" type="image/x-icon">
     <title>Tic Tac Toe</title>
 </head>
@@ -20,7 +21,7 @@
     <!-- Main -->
     <div class="main">
         <!-- Player 1 -->
-        <div class="player1">
+        <div class="players">
             <!-- Name Player 1 -->
             <div class="name_title name1" id="player_1">
                 <p>Player 1</p>
@@ -30,7 +31,7 @@
                 <img class="icons_players" src="../img/pacman2.png" alt="player1_pacman">
             </div>
             <!-- Score -->
-            <div class="score1">
+            <div class="scores score1">
                 <p>Score</p>
                 <p>0</p>
             </div>
@@ -62,7 +63,7 @@
         </div>
 
         <!--Player 2  -->
-        <div class="player1">
+        <div class="players">
             <!-- Name player 2 -->
             <div class="name_title name2" id="player_2">
                 <p>Player 2</p>
@@ -72,7 +73,7 @@
                     <img class="icons_players" src="../img/ghost.png" alt="player1_pacman">
                 </div>
             <!-- Score player 2 -->
-            <div class="score2">
+            <div class="scores score2">
                 <p>Score</p>
                 <p>0</p>
             </div>
@@ -87,12 +88,12 @@
 
     <!-- Buttons -->
     <div class="buttons">
-        <button type="button" class="start">
+        <div type="button" class="button_1 start">
             Start
-        </button>
-        <button type="button" class="new_game">
+        </div>
+        <div type="button" class="button_1 new_game">
             New game
-        </button>
+        </div>
     </div>
     <script src="../js/main.js"></script>
 </body>
