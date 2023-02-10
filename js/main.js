@@ -40,24 +40,47 @@ let optionsWinner = [
 // Comprobamos por cada movimiento si hay un ganador
 
 const checkWinner = () => {
-    if (myBoard[0] == myBoard[1] && myBoard[1] == myBoard[2]){
-    window.location.href = "../pages/winner.html"
-    }else if (myBoard[3] == myBoard[4] && myBoard[4] == myBoard[5]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[6] == myBoard[7] && myBoard[7] == myBoard[8]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[0] == myBoard[3] && myBoard[3] == myBoard[6]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[1] == myBoard[4] && myBoard[4] == myBoard[7]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[2] == myBoard[5] && myBoard[5] == myBoard[8]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[0] == myBoard[4] && myBoard[4] == myBoard[8]){
-        window.location.href = "../pages/winner.html"
-    }else if (myBoard[2] == myBoard[4] && myBoard[4] == myBoard[6]){
-        window.location.href = "../pages/winner.html"
-    }else {
-        return false;
+    console.log("entras aquí??")
+    if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[0][1]] === "X") && (myBoard[optionsWinner[0][2]] === "X")){
+        window.location.href= "../pages/winner.html"
+    
+    } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[0][1]] === "O") && (myBoard[optionsWinner[0][2]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[1][0]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[1][2]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[1][0]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[1][2]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[2][0]] === "X") && (myBoard[optionsWinner[2][1]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[2][0]] === "O") && (myBoard[optionsWinner[2][1]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[1][0]] === "X") && (myBoard[optionsWinner[2][0]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[1][0]] === "O") && (myBoard[optionsWinner[2][0]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[0][1]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][1]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[0][1]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][1]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[0][2]] === "X") && (myBoard[optionsWinner[1][2]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[0][2]] === "O") && (myBoard[optionsWinner[1][2]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
+        window.location.href= "../pages/winner.html"
+    }
+    else if ((myBoard[optionsWinner[0][2]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][0]] === "X")){
+        window.location.href= "../pages/winner.html"
+    } else if  ((myBoard[optionsWinner[0][2]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][0]] === "O")){
+        window.location.href= "../pages/winner.html"
     }
 };
 
@@ -68,10 +91,10 @@ board.map(
         box.addEventListener('click', ()=> {
             if((box.innerHTML === "") && (turnP1 > 0 || turnP2 > 0)){
                 box.innerHTML = (turn) ? "O" : "X";
-                myBoard[box.id] = (turn) ? "O" : "X";
                 (turn) ? turnP1-- : turnP2--;
+                myBoard[box.id] = (turn) ? "O" : "X";
                 if (checkWinner()) {
-                    console.log(myBoard[box.id]);
+                    // console.log(myBoard[box.id]);
                 }
                 turn = !turn;          //Cambiamos de turno
             };
