@@ -1,0 +1,15 @@
+@media (max-width:620px){
+
+    .title_h1{
+        font-size: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 20em;
+        height: 22em;
+        margin-top: 2em;
+        font-size: 16px;
+    }
+}
