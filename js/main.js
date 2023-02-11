@@ -40,45 +40,43 @@ let optionsWinner = [
 // Comprobamos por cada movimiento si hay un ganador
 
 const checkWinner = () => {
-    console.log("entras aquí??")
     if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[0][1]] === "X") && (myBoard[optionsWinner[0][2]] === "X")){
-        window.location.href= "../pages/winner.html"
-    
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[0][1]] === "O") && (myBoard[optionsWinner[0][2]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[1][0]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[1][2]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[1][0]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[1][2]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[2][0]] === "X") && (myBoard[optionsWinner[2][1]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[2][0]] === "O") && (myBoard[optionsWinner[2][1]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[1][0]] === "X") && (myBoard[optionsWinner[2][0]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[1][0]] === "O") && (myBoard[optionsWinner[2][0]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[0][1]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][1]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][1]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][1]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[0][2]] === "X") && (myBoard[optionsWinner[1][2]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][2]] === "O") && (myBoard[optionsWinner[1][2]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[0][0]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][2]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][0]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][2]] === "O")){
         window.location.href= "../pages/winner.html"
     }
     else if ((myBoard[optionsWinner[0][2]] === "X") && (myBoard[optionsWinner[1][1]] === "X") && (myBoard[optionsWinner[2][0]] === "X")){
-        window.location.href= "../pages/winner.html"
+        window.location.href= "../pages/winner2.html"
     } else if  ((myBoard[optionsWinner[0][2]] === "O") && (myBoard[optionsWinner[1][1]] === "O") && (myBoard[optionsWinner[2][0]] === "O")){
         window.location.href= "../pages/winner.html"
     }
@@ -96,7 +94,7 @@ board.map(
                 if (checkWinner()) {
                     // console.log(myBoard[box.id]);
                 }
-                turn = !turn;          //Cambiamos de turno
+                turn = !turn; 
             };
         });
     }

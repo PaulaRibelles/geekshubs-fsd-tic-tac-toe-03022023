@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+body{
+    background-color: black;
+    color: rgb(238, 138, 8);
+    font-family: Public Pixel;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.results{
+    width: 25em;
+    height: 5em;
+    color: rgb(253, 252, 254);
+    background-color: rgb(238, 138, 8);
+    border: 7px solid rgb(153, 7, 7);
+    border-radius: 1em;
+    text-align: center;
+}
+
+.winner{
+    text-align: center;
+    font-size: 2em;
+}

@@ -1,11 +1,7 @@
-@media (max-width:500px){
+@media (min-width:500px) and (max-width:1060px){
     
     #title_h1{
-        font-size: 21px;
-    }
-
-    body{
-        font-size: 12px;
+        font-size: 2em;
     }
 
     .main{
@@ -14,9 +10,10 @@
     }
 
     .players{
-        width: 25em;
+        width: 30em;
         height: 5em;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
         font-size: 1em;
@@ -27,8 +24,8 @@
     }
 
     .name_title{
-        margin-right: 1em;
-        width: 30em;
+        margin-right: 3em;
+        width: 20em;
         height: 2em;
         /* background-color: blue; */
     }
@@ -39,26 +36,28 @@
 
     .icons_live{
         display: none;
+        /* width: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5em; */
     }
 
     .tableroContainer{
         width: 100%;
-        height: 15em;
+        height: 40em;
         /* border: 8px solid blue; */
-        margin-top: 1em;
+        
     }
 
     .cellDesign{
-        width: 7em;
-        height: 5em;
-        /* background-color: blueviolet; */
+        width: 13em;
+        height: 12em;
+        /* background-color: aliceblue; */
     }
 
     .dotted_board{
         width: 100%;
-        height: 18em;
+        height: 39em;
     }
 };
-
-
-

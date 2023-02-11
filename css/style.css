@@ -86,7 +86,6 @@ body{
     border-bottom: 5px dotted white;
 }
 
-
 .button_cel{
     display: block;
     height: 90%;
@@ -161,11 +160,17 @@ body{
 .button_1{
     width: 15em;
     height: 3em;
-    border: solid black;
+    /* border: solid black; */
+    /* border: none; */
     align-items: center;
     color: whitesmoke;
     text-align: center;
+    cursor: pointer;
 }
 
+.button_1:hover{
+    background-color:rgb(238, 138, 8);
+    color: rgb(153, 7, 7);
+}
 
 
