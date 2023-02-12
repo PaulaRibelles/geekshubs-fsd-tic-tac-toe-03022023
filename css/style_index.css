@@ -22,7 +22,7 @@ body{
     height: 20em;
     border: 5px solid green;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
     margin-top: 5em;
     font: white ;
