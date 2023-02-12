@@ -12,4 +12,9 @@
         margin-top: 2em;
         font-size: 16px;
     }
+
+    .name_input{
+        width: 15em;
+        font-size: 12px;
+    }
 }
