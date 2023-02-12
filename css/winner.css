@@ -42,6 +42,10 @@ body{
     color: rgb(153, 7, 7);
 }
 
+.buttons{
+    display: flex;
+}
+
 .again{
     margin-top: 4em;
     cursor: pointer;
