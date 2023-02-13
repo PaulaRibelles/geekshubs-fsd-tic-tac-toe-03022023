@@ -9,6 +9,7 @@ document.getElementById("player_2").innerHTML = `<p>${namePlayer2}<p/>`;
 
 // BOARD
 
+
 // Convertimos en Array
 
 let board = Array.from(document.getElementsByClassName("cellDesign"));
@@ -100,3 +101,6 @@ board.map(
     }
 );
 
+setTimeout(()=>{
+    window.open("../pages/winner.html", "../pages/winner2.html");
+},500);

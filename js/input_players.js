@@ -4,6 +4,7 @@ let playerInputs = {
     player2 : ''
 };
 
+
 let inputsCapturados = Array.from(document.getElementsByTagName("input"));
 inputsCapturados.map(
     (inputNamePlayer) => {
@@ -18,5 +19,13 @@ inputsCapturados.map(
         });
     }
 );
+
+const emptyInput = () => {
+        if (playerInputs.player1 === '' || playerInputs.player2 === ''){
+        return;
+    }
+};
+
+
 
 
