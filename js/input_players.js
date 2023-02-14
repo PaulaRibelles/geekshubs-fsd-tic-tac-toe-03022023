@@ -24,12 +24,10 @@ const emptyInput = () => {
         if (playerInputs.player1 === '' || playerInputs.player2 === ''){
         return;
     }
+    window.location.href="./pages/board.html"
 };
 
-btn.addEventListener("click");
-function start(){
-    window.location.href="../pages/board.html"
-}
+
 
 
 

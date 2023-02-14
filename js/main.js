@@ -92,11 +92,17 @@ board.map(
                 box.innerHTML = (turn) ? "O" : "X";
                 (turn) ? turnP1-- : turnP2--;
                 myBoard[box.id] = (turn) ? "O" : "X";
-                if (checkWinner()) {
-                    // console.log(myBoard[box.id]);
-                }
+                checkWinner();
                 turn = !turn; 
-            };
+            }else if(box.innerHTML === "O" && turnP1 === 0 && turn == true){
+                box.innerHTML = "" ;
+                myBoard[box.id] = "";
+                turnP1++;
+            }else if (box.innerHTML === "X" && turnP2 === 0 && turn == false){
+                box.innerHTML = "";
+                myBoard[box.id] = "";
+                turnP2++;
+            }
         });
     }
 );
