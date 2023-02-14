@@ -101,6 +101,4 @@ board.map(
     }
 );
 
-setTimeout(()=>{
-    window.open("../pages/winner.html", "../pages/winner2.html");
-},500);
+

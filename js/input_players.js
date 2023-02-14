@@ -26,6 +26,11 @@ const emptyInput = () => {
     }
 };
 
+btn.addEventListener("click");
+function start(){
+    window.location.href="../pages/board.html"
+}
+
 
 
 
