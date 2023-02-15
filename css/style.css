@@ -72,11 +72,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
     margin: 1em;
     cursor: pointer;
     color: white;
+    /* color:transparent; */
 }
+
+/* .celda_ghost{
+    background-image: url(../img/icon2.png);
+}   
+
+.celda_cherry{
+    background-image: url(../img/live3.png);
+} */
 
 .dotted_board{
     border-right: 5px dotted white;
@@ -145,7 +153,6 @@ body{
     align-items: 0, center;
     margin: auto;
     margin-top: 5em;
-
 }
 
 /* Buttons start and new game */
