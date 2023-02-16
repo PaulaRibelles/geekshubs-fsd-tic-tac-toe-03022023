@@ -8,10 +8,11 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .players{
-        width: 30em;
+        width: 47em;
         height: 5em;
         display: flex;
         flex-direction: row;
@@ -25,8 +26,8 @@
     }
 
     .name_title{
-        margin-right: 3em;
-        width: 20em;
+        margin-right: 1em;
+        width: 15em;
         height: 2em;
         /* background-color: blue; */
     }
@@ -37,7 +38,8 @@
 
     .icons_live{
         display: none;
-        /* width: 2em;
+        /* width: 1em;
+        height: 1em;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -57,9 +59,14 @@
         /* background-color: aliceblue; */
     }
 
+    .no_dotted{
+        border: 0;
+    }
+
+
     .dotted_board{
         width: 100%;
-        height: 39em;
+        height: 38em;
     }
 }
 
@@ -70,17 +77,17 @@
     }
 
     body{
-        font-size: 1em;
+        font-size: small;
     }
 
     .main{
-        width: 100%;
+        width: 25em;
         display: flex;
         flex-direction: column;
     }
 
     .players{
-        width: 25em;
+        width: 18em;
         height: 5em;
         display: flex;
         align-items: center;
@@ -94,7 +101,7 @@
 
     .name_title{
         margin-right: 1em;
-        width: 30em;
+        width: 12em;
         height: 2em;
         /* background-color: blue; */
     }
@@ -108,21 +115,35 @@
     }
 
     .tableroContainer{
-        width: 100%;
-        height: 15em;
+        width: 24em;
+        height: 18em;
         /* border: 8px solid blue; */
-        margin-top: 1em;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
     }
 
     .cellDesign{
-        width: 7em;
-        height: 5em;
+        width: 8em;
+        height: 4em;
         /* background-color: blueviolet; */
     }
 
     .dotted_board{
-        width: 100%;
-        height: 18em;
+        width: 8em;
+        height: 15em;
+    }
+
+    .no_dotted{
+        border: 0;
+    }
+
+    .border_dotted{
+        width: 5em;
+    }
+
+    .buttons{
+        margin-top: -1em;
     }
 }
 
