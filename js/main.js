@@ -24,6 +24,7 @@ let turnP2 = 3;
 let liveP1 = 3;
 let liveP2 = 3;
 
+
 // El tablero se compone de 9 celdas
 
 let myBoard = ["","","","","","","","",""];
@@ -48,7 +49,9 @@ board.map(
         box.addEventListener('click', ()=> {
             if((box.innerHTML === "") && (turnP1 > 0 || turnP2 > 0)){
                 box.innerHTML = (turn) ? "O" : "X";
-                (turn) ? turnP1-- && liveP1-- : turnP2-- && liveP2--;
+                (turn) ? turnP1-- : turnP2--;
+                (turn) ? liveP1-- : liveP2--;
+                console.log(liveP1)
                 myBoard[box.id] = (turn) ? "O" : "X";
                 checkWinner();
                 turn = !turn; 
@@ -56,11 +59,16 @@ board.map(
                 box.innerHTML = "" ;
                 myBoard[box.id] = "";
                 turnP1++;
+                let tokenLive = document.getElementById("liveP2_3")
+                tokenLive.innerHTML = '<img src="../img/live3.png" alt="live1>'
             }else if (box.innerHTML === "X" && turnP2 === 0 && turn == false){
                 box.innerHTML = "";
                 myBoard[box.id] = "";
                 turnP2++;
             }
+            restLiveP1();
+            restLiveP2();
+            console.log(liveP2)
         });
     }
 );
@@ -85,7 +93,35 @@ const checkWinner = () => {
         window.location.href="../pages/winner.html"
     }else if ((myBoard[2] === myBoard[4]) && (myBoard[4] === myBoard[6]) && myBoard [2] !==""){
         window.location.href="../pages/winner.html"
-    }else if ((myBoard === "X") && (turn !== true)){
-        window.location.href="../pages/winner2.html"
     }
+    // else if ((myBoard === [X]) && (turn !== true)){
+    //     window.location.href="../pages/winner2.html"
+    // }
 };
+
+
+const restLiveP1 = () =>{
+    if (liveP1 == 2){
+        let token1 = document.getElementById("liveP1_1");
+        token1.innerHTML = "";
+    }else if (liveP1 == 1){
+        let token2 = document.getElementById("liveP1_2");
+        token2.innerHTML = "";
+    }else if (liveP1 == 0){
+        let token3 = document.getElementById("liveP1_3");
+        token3.innerHTML = "";
+    }
+}
+
+const restLiveP2 = () =>{
+    if (liveP2 == 2){
+        let token1 = document.getElementById("liveP2_1");
+        token1.innerHTML = "";
+    }else if (liveP2 == 1){
+        let token2 = document.getElementById("liveP2_2");
+        token2.innerHTML = "";
+    }else if (liveP2 == 0){
+        let token3 = document.getElementById("liveP2_3");
+        token3.innerHTML = "";
+    }
+}

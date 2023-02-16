@@ -145,15 +145,20 @@ body{
 }
 
 .icons_live{
-    width: 2em;
-    height: 3em;
+    width: 1em;
+    height: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: 0, center;
     margin: auto;
-    margin-top: 5em;
+    margin-top: 3em;
 }
+
+/* .icons_live2{
+    width: 1em;
+    height: 1em;
+} */
 
 /* Buttons start and new game */
 
