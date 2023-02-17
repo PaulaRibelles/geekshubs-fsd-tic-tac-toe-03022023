@@ -35,8 +35,12 @@
 
     .icon{
         display: none;
-        
     }
+
+    /* .icon_media{
+        background-image: url(../img/winner1_mini.png);
+    }
+     */
 
     .name_title{
         width: 12em;
