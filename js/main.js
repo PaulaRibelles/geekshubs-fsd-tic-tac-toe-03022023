@@ -102,9 +102,9 @@ const checkWinner = () => {
 
     }else if ((myBoard[0] === myBoard[3]) && (myBoard[3] === myBoard[6]) && myBoard [0] !==""){
 
-        if (myBoard [3] === "O"){
+        if (myBoard [0] === "O"){
             window.location.href="../pages/winner.html"
-        }else if (myBoard [3] === "X"){
+        }else if (myBoard [0] === "X"){
             window.location.href="../pages/winner2.html"
         }
 
