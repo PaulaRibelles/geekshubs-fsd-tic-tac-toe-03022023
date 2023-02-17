@@ -43,6 +43,8 @@ let optionsWinner = [
 
 // Pintamos X || O según el turno del jugador
 
+let tokenLive = document.getElementById("liveP2_3")
+
 board.map(
     (box) => {
         box.addEventListener('click', ()=> {
@@ -58,7 +60,6 @@ board.map(
                 box.innerHTML = "" ;
                 myBoard[box.id] = "";
                 turnP1++;
-                let tokenLive = document.getElementById("liveP2_3")
                 tokenLive.innerHTML = '<img src="../img/live3.png" alt="live1>'
             }else if (box.innerHTML === "X" && turnP2 === 0 && turn == false){
                 box.innerHTML = "";
@@ -67,7 +68,7 @@ board.map(
             }
             restLiveP1();
             restLiveP2();
-            plusLiveP1();
+            // plusLiveP1();
         });
     }
 );
@@ -170,16 +171,19 @@ const restLiveP2 = () =>{
     }
 }
 
-const plusLiveP1 = () =>{
-    if ((liveP1 == 0) && (turn == true)){
-        token3 = "";
-        tokenLive.innerHTML = '<img src="../img/live3.png" alt="live1>'
-    }
-}
+// const plusLiveP1 = () =>{
+//     if ((liveP1 == 1) && (turn == true)){
+//         console.log("Hola")
+//         let token3 = document.getElementById("liveP2_3");
 
-const plusLiveP2 = () =>{
-    if ((liveP2 == 0) && (turn == false)){
-        let token3 = document.getElementById("liveP2_3");
-        token3++;
-    }
-}
+//         // token3 = "";
+//         token3.innerHTML = `X`
+//     }
+// }
+
+// const plusLiveP2 = () =>{
+//     if ((liveP2 == 0) && (turn == false)){
+//         let token3 = document.getElementById("liveP2_3");
+//         token3++;
+//     }
+// }
