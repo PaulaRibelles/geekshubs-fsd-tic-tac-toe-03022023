@@ -78,13 +78,6 @@ body{
     /* color:transparent; */
 }
 
-/* .celda_ghost{
-    background-image: url(../img/icon2.png);
-}   
-
-.celda_cherry{
-    background-image: url(../img/live3.png);
-} */
 
 .dotted_board{
     border-right: 5px dotted white;
@@ -92,6 +85,10 @@ body{
 
 .border_dotted{
     border-bottom: 5px dotted white;
+}
+
+.no_dotted{
+    border: 0;
 }
 
 .button_cel{
@@ -149,16 +146,18 @@ body{
     height: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: 0, center;
     margin: auto;
-    margin-top: 3em;
+    margin-top: 6em;
 }
 
-/* .icons_live2{
-    width: 1em;
-    height: 1em;
-} */
+.icons_live2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
 
 /* Buttons start and new game */
 
@@ -171,7 +170,7 @@ body{
 
 .button_1{
     width: 15em;
-    height: 3em;
+    height: 2em;
     /* border: solid black; */
     align-items: center;
     color: whitesmoke;

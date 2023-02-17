@@ -26,7 +26,6 @@ body{
     flex-direction: column;
     margin: auto;
     margin-top: 5em;
-    font: white ;
     justify-content: center;
     align-items: center;
 }
@@ -36,16 +35,14 @@ width: 20em;
 height: 3em;
 font-size: 18px;
 background-color: black;
-color: whitesmoke;
+color: green;
 border: none;
 font-family: Public Pixel;
 }
 
 .start{
-    width: 5em;
+    width: 6em;
     height: 2em;
-    background-color: aliceblue;
-    color: black;
     text-align: center;
     margin-top: 2em;
     cursor: pointer;
@@ -53,6 +50,5 @@ font-family: Public Pixel;
 
 .start:hover{
     background-color: green;
-    color:whitesmoke
 }
 

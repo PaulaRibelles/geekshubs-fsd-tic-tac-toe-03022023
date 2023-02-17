@@ -24,7 +24,6 @@ let turnP2 = 3;
 let liveP1 = 3;
 let liveP2 = 3;
 
-
 // El tablero se compone de 9 celdas
 
 let myBoard = ["","","","","","","","",""];
@@ -51,7 +50,7 @@ board.map(
                 box.innerHTML = (turn) ? "O" : "X";
                 (turn) ? turnP1-- : turnP2--;
                 (turn) ? liveP1-- : liveP2--;
-                console.log(liveP1)
+                
                 myBoard[box.id] = (turn) ? "O" : "X";
                 checkWinner();
                 turn = !turn; 
@@ -68,7 +67,7 @@ board.map(
             }
             restLiveP1();
             restLiveP2();
-            console.log(liveP2)
+            plusLiveP1();
         });
     }
 );
@@ -78,25 +77,70 @@ board.map(
 const checkWinner = () => {
 
     if ((myBoard[0] === myBoard[1]) && (myBoard[1] === myBoard[2]) && myBoard [0] !==""){
-        window.location.href="../pages/winner.html"
+        
+        if (myBoard [0] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [0] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
     }else if ((myBoard[3] === myBoard[4]) && (myBoard[4] === myBoard[5]) && myBoard [3] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [3] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [3] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
     }else if ((myBoard[6] === myBoard[7]) && (myBoard[7] === myBoard[8]) && myBoard [6] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [6] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [6] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
     }else if ((myBoard[0] === myBoard[3]) && (myBoard[3] === myBoard[6]) && myBoard [0] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [3] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [3] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
     }else if ((myBoard[1] === myBoard[4]) && (myBoard[4] === myBoard[7]) && myBoard [1] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [1] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [1] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
     }else if ((myBoard[2] === myBoard[5]) && (myBoard[5] === myBoard[8]) && myBoard [2] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [2] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [2] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
     }else if ((myBoard[0] === myBoard[4]) && (myBoard[4] === myBoard[8]) && myBoard [0] !==""){
-        window.location.href="../pages/winner.html"
+
+        if (myBoard [0] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [0] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
+
+
     }else if ((myBoard[2] === myBoard[4]) && (myBoard[4] === myBoard[6]) && myBoard [2] !==""){
         window.location.href="../pages/winner.html"
     }
-    // else if ((myBoard === [X]) && (turn !== true)){
-    //     window.location.href="../pages/winner2.html"
-    // }
+
+    if (myBoard [2] === "O"){
+        window.location.href="../pages/winner.html"
+    }else if (myBoard [2] === "X"){
+        window.location.href="../pages/winner2.html"
+    }
 };
 
 
@@ -123,5 +167,19 @@ const restLiveP2 = () =>{
     }else if (liveP2 == 0){
         let token3 = document.getElementById("liveP2_3");
         token3.innerHTML = "";
+    }
+}
+
+const plusLiveP1 = () =>{
+    if ((liveP1 == 0) && (turn == true)){
+        token3 = "";
+        tokenLive.innerHTML = '<img src="../img/live3.png" alt="live1>'
+    }
+}
+
+const plusLiveP2 = () =>{
+    if ((liveP2 == 0) && (turn == false)){
+        let token3 = document.getElementById("liveP2_3");
+        token3++;
     }
 }
