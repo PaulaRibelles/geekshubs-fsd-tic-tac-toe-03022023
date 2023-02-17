@@ -77,14 +77,14 @@ board.map(
 
 const checkWinner = () => {
 
-    if ((myBoard[0] === myBoard[1]) && (myBoard[1] === myBoard[2]) && myBoard [0] !=="" && myBoard === "O"){
+    if ((myBoard[0] === myBoard[1]) && (myBoard[1] === myBoard[2]) && myBoard [0] !==""){
+
+        if (myBoard [0] === "O"){
+            window.location.href="../pages/winner.html"
+        }else if (myBoard [0] === "X"){
+            window.location.href="../pages/winner2.html"
+        }
         
-        window.location.href="../pages/winner.html"
-        // if (myBoard [0] === "O"){
-        //     window.location.href="../pages/winner.html"
-        // }else if (myBoard [0] === "X"){
-        //     window.location.href="../pages/winner2.html"
-        // }
     }else if ((myBoard[3] === myBoard[4]) && (myBoard[4] === myBoard[5]) && myBoard [3] !==""){
 
         if (myBoard [3] === "O"){
@@ -142,7 +142,6 @@ const checkWinner = () => {
         }
     }
 }
-
 
 const restLiveP1 = () =>{
     if (liveP1 == 2){
