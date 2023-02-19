@@ -17,14 +17,14 @@ En este Tic Tac Toe, basado en otro de los clásicos, Pac-man se enfrenta a la i
 
 ![Tic-Tac-Toe-exemple](https://user-images.githubusercontent.com/65761160/219978226-7738d58a-286e-4aea-9c99-13e23043b580.gif)
 
-Como se observa en la previsualización, el juego consta de tres páginas. 
+Como se observa en la ejemplo, el juego consta de tres páginas. 
 
--Página de inicio. Los jugadores deberán poner un nombre o nick qu no supere los diez caracteres. Es necesario introducir un nombre por jugador, de otro modo, el botón Start no se iniciará. 
+- **Página de inicio. Los jugadores deberán poner un nombre o nick qu no supere los diez caracteres. Es necesario introducir un nombre por jugador, de otro modo, el botón Start no se iniciará. 
 
--Página principal. Aquí se encuentra el tablero del juego y la información de los jugadores, es decir, el nombre que han indicado en la página anterior, el personaje que representan así como la fricha que juegan y el contador hacia atrás de los tres primeros turnos que están representados con las cerezas. 
+- **Página principal. Aquí se encuentra el tablero del juego y la información de los jugadores, es decir, el nombre que han indicado en la página anterior, el personaje que representan así como la fricha que juegan y el contador hacia atrás de los tres primeros turnos que están representados con las cerezas. 
 Los elementos aquí descritos varían según la pantalla en que se visualice. Para el modo móvil o tablet, se han eliminado los personajes ya que reducirían el tamaño del tablero y podría suponer una mala experiencia de juego para el usuario. 
 
--Página ganador, donde se indica el nombre del jugador que ha demostrado estar más atento. 
+- **Página ganador, donde se indica el nombre del jugador que ha demostrado estar más atento. 
 
 <h2> Tecnologías utilizadas </h2> 
 
