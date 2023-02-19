@@ -3,7 +3,8 @@
 <h2> Descripción del proyecto </h2> 
 El reto de este proyecto consiste en crear el clásico juego del tres en raya (Tic Tac Toe) en lenguaje JavaScript. El usuario se encuentra con una página inicial en la que deberán introducir el nombre de cada jugador para poder acceder al tablero del juego. En la página principal, el tablero se encuentra en la parte central y a cada lado la información de los jugadores. Cada jugador dispone de tres movimientos iniciales que una vez finalizados, el jugador, dentro de su turno, podrá quitar una de sus fichas y colocarla en otra casilla que esté vacía. 
 
-En este Tic Tac Toe, basado en otro de los clásicos, Pac-man se enfrenta a la inteligencia los fantasmas. Un juego donde los nostálgicos podrán volver a vivir la experiencia en píxeles. 
+En este Tic Tac Toe, basado en otro de los clásicos, Pac-man y los fantasmas se vuelven a enfrentar. Esta vez no se perseguirán en un circuito, si no que tendrán que demostrar quién está más atento al tablero y conseguir poner tres de sus fichas en línea.
+Un juego donde los nostálgicos podrán volver a vivir la experiencia en píxeles. 
 
 <h3 align="center"> Referencias </h3>
 
