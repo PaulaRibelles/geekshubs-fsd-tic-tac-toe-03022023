@@ -9,8 +9,6 @@
 
     .container{
         display: flex;
-        /* width: 1em;
-        height: 3em; */
         align-items: center;
         justify-content: center;
     }
@@ -37,10 +35,10 @@
         display: none;
     }
 
-    /* .icon_media{
+    .icon_media{
         background-image: url(../img/winner1_mini.png);
     }
-     */
+    
 
     .name_title{
         width: 12em;

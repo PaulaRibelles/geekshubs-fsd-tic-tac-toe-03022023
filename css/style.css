@@ -46,7 +46,6 @@ body{
 .main{
     width: 100%;
     height: calc(100vh - 100px);
-    /* background-color: aqua; */
     padding: 20px 20px;
     display: flex;
     justify-content: space-around;
@@ -60,9 +59,7 @@ body{
     margin-top: 3em;
     display: grid;
     grid-template-columns: repeat(3,auto);
-    /* border: 8px solid blue; */
     border-radius: 3px;
-    /* background-color: aliceblue; */
 }
 
 
@@ -75,7 +72,6 @@ body{
     margin: 1em;
     cursor: pointer;
     color: white;
-    /* color:transparent; */
 }
 
 
@@ -123,7 +119,6 @@ body{
     border-top: none;
     border-right: none;
     border-left: none;
-    /* background-color: blueviolet; */
 }
 
 .icons_players{
@@ -171,7 +166,6 @@ body{
 .button_1{
     width: 15em;
     height: 2em;
-    /* border: solid black; */
     align-items: center;
     color: whitesmoke;
     text-align: center;

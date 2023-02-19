@@ -9,7 +9,6 @@ document.getElementById("player_2").innerHTML = `<p>${namePlayer2}<p/>`;
 
 // BOARD
 
-
 // Convertimos en Array
 
 let board = Array.from(document.getElementsByClassName("cellDesign"));
@@ -168,20 +167,3 @@ const restLiveP2 = () =>{
         token3.innerHTML = "";
     }
 }
-
-// const plusLiveP1 = () =>{
-//     if ((liveP1 == 1) && (turn == true)){
-//         console.log("Hola")
-//         let token3 = document.getElementById("liveP2_3");
-
-//         // token3 = "";
-//         token3.innerHTML = `X`
-//     }
-// }
-
-// const plusLiveP2 = () =>{
-//     if ((liveP2 == 0) && (turn == false)){
-//         let token3 = document.getElementById("liveP2_3");
-//         token3++;
-//     }
-// }

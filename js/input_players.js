@@ -9,7 +9,6 @@ let inputsCapturados = Array.from(document.getElementsByTagName("input"));
 inputsCapturados.map(
     (inputNamePlayer) => {
         inputNamePlayer.addEventListener("input", ()=> {
-            //Esta funcion se ejecuta cada vez que alguien escribe en un input.
             for (let elementoQueRecorro in playerInputs){
                 if(inputNamePlayer.name == elementoQueRecorro){
                     playerInputs[elementoQueRecorro] = inputNamePlayer.value;

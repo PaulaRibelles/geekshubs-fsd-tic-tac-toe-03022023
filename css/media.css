@@ -22,14 +22,12 @@
         text-align: center;
         border: none;
         margin-top: 1em;
-        /* background-color: aquamarine; */
     }
 
     .name_title{
         margin-right: 1em;
         width: 15em;
         height: 2em;
-        /* background-color: blue; */
     }
 
     .icons_p1{
@@ -52,14 +50,11 @@
     .tableroContainer{
         width: 35em;
         height: 40em;
-        /* border: 8px solid blue; */
-        
     }
 
     .cellDesign{
         width: 13em;
         height: 12em;
-        /* background-color: aliceblue; */
     }
 
     .no_dotted{
@@ -99,14 +94,12 @@
         text-align: center;
         border: none;
         margin-top: 1em;
-        /* background-color: aquamarine; */
     }
 
     .name_title{
         margin-right: 1em;
         width: 12em;
         height: 2em;
-        /* background-color: blue; */
     }
 
     .icons_p1{
@@ -130,7 +123,6 @@
     .tableroContainer{
         width: 24em;
         height: 18em;
-        /* border: 8px solid blue; */
         margin-top: 2em;
         display: flex;
         justify-content: center;
@@ -139,7 +131,6 @@
     .cellDesign{
         width: 8em;
         height: 4em;
-        /* background-color: blueviolet; */
     }
 
     .dotted_board{
