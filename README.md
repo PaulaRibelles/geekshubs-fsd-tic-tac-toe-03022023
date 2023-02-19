@@ -17,7 +17,7 @@ En este Tic Tac Toe, basado en otro de los clásicos, Pac-man se enfrenta a la i
 
 ![Tic-Tac-Toe-exemple](https://user-images.githubusercontent.com/65761160/219978226-7738d58a-286e-4aea-9c99-13e23043b580.gif)
 
-Como se observa en la ejemplo, el juego consta de tres páginas. 
+Como se observa en el ejemplo, el juego consta de tres páginas; 
 
 - **Página de inicio**. Los jugadores deberán poner un nombre o nick que no supere los diez caracteres. Es necesario introducir un nombre por jugador, de otro modo, el botón Start no se iniciará. 
 
