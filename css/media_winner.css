@@ -1,6 +1,7 @@
 @media (max-width:500px){
 
     body{
+        width: 24em;
         display: flex;
         font-size: small;
         align-items: center;
@@ -8,6 +9,7 @@
     }
 
     .container{
+        width: 20em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,11 +36,6 @@
     .icon{
         display: none;
     }
-
-    .icon_media{
-        background-image: url(../img/winner1_mini.png);
-    }
-    
 
     .name_title{
         width: 12em;
