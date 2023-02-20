@@ -67,7 +67,6 @@ board.map(
             }
             restLiveP1();
             restLiveP2();
-            // plusLiveP1();
         });
     }
 );
