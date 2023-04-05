@@ -18,7 +18,8 @@ Un juego donde los nostálgicos podrán volver a vivir la experiencia en píxele
 
 <h3 align="center"> Ejemplo de juego</h3>
 
-![Tic-Tac-Toe-exemple](https://user-images.githubusercontent.com/65761160/219978226-7738d58a-286e-4aea-9c99-13e23043b580.gif)
+![TicTacToe_PaulaRibelles](https://user-images.githubusercontent.com/65761160/230150253-b0e1296a-7f5d-47c4-829e-8ed11471efb9.gif)
+
 
 Como se observa en el ejemplo, el juego consta de tres páginas; 
 
